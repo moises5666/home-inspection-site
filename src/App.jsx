@@ -1,6 +1,7 @@
 import React from 'react';
-iimport heroBg from './hero-bg.jpg';
+import heroBg from './hero-bg.jpg';
 import packagesImg from './inspection-packages.png';
+// fixed import statement
 
 
 
