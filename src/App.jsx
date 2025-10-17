@@ -1,5 +1,8 @@
 import React from 'react';
-import heroBg from './hero-bg.jpg';
+iimport heroBg from './hero-bg.jpg';
+import packagesImg from './inspection-packages.png';
+
+
 
 /**
  * The main application component renders the content for the home inspection
@@ -49,6 +52,11 @@ function App() {
           ))}
         </div>
       </section>
+  {/* Inspection packages section */}
+  <section className="packages-section">
+    <h2>Inspection Packages</h2>
+    <img src={packagesImg} alt="Inspection packages comparison" className="packages-image" />
+  </section>
 
       {/* Home inspectors you can trust section */}
       <section className="why-us-section">
