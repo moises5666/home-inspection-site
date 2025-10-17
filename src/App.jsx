@@ -1,4 +1,5 @@
 import React from 'react';
+import heroBg from './hero-bg.jpg';
 
 /**
  * The main application component renders the content for the home inspection
@@ -12,9 +13,18 @@ function App() {
   return (
     <div>
       {/* Hero section with a bold introduction and call to action */}
-      <header className="hero">
-        <h1>Florida's Most Trusted Home Inspection Company</h1>
-        <p className="tagline">Don't wish you knew — get the Avila view.</p>
+      <header
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${heroBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          color: '#fff',
+          padding: '6rem 1rem'
+        }}
+      >
+        <h1>Florida&apos;s Most Trusted Home Inspection Company</h1>
+        <p className="tagline">Don&apos;t wish you knew &mdash; get the Avila view.</p>
         <a href="#quote" className="btn primary">Book a Home Inspection</a>
         {/* List multiple contact numbers for various regions */}
         <p className="hero-contact">
@@ -48,8 +58,8 @@ function App() {
           inspections are available, and your report is delivered immediately after completion.
         </p>
         <ul className="reasons-list">
-          <li>Licensed & insured inspectors</li>
-          <li>Evening & weekend appointments available</li>
+          <li>Licensed &amp; insured inspectors</li>
+          <li>Evening &amp; weekend appointments available</li>
           <li>Clear, easy-to-understand reports</li>
         </ul>
       </section>
@@ -90,7 +100,7 @@ function App() {
       {/* Quote form */}
       <section id="quote" className="quote-section">
         <h2>Get a Quick Quote</h2>
-        <p>Fill in your details and we'll get back to you promptly.</p>
+        <p>Fill in your details and we&apos;ll get back to you promptly.</p>
         <form className="quote-form" onSubmit={(e) => e.preventDefault()}>
           <label>
             Name
@@ -119,7 +129,7 @@ function App() {
       {/* Footer with license and contact info */}
       <footer className="footer">
         <p>FL Home Inspector License #HI12345</p>
-        <p>Serving Miami-Dade, Broward, Palm Beach, Treasure Coast & Central Florida</p>
+        <p>Serving Miami-Dade, Broward, Palm Beach, Treasure Coast &amp; Central Florida</p>
         <p>&copy; {new Date().getFullYear()} Avila Home Inspections. All rights reserved.</p>
       </footer>
     </div>
