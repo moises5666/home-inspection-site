@@ -212,3 +212,22 @@ h3 {
 .footer p + p {
   margin-top: 0.5rem;
 }
+
+/* Packages section styles */
+.packages-section {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.packages-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.packages-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
